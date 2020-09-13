@@ -1,0 +1,64 @@
+﻿<Window x:Class="Annee3_PFR.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Annee3_PFR"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+
+
+    <Grid>
+
+
+        <Grid.Resources>
+            <Style TargetType="Label">
+                <Setter Property="HorizontalAlignment" Value="Center"></Setter>
+                <Setter Property="VerticalAlignment" Value="Center"></Setter>
+            </Style>
+            <Style TargetType="TextBox">
+                <Setter Property="HorizontalAlignment" Value="Stretch"></Setter>
+                <Setter Property="VerticalAlignment" Value="Center"></Setter>
+                <Setter Property="TextAlignment" Value="Center"></Setter>
+            </Style>
+        </Grid.Resources>
+
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="10"/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="5"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Image x:Name="imagetri" Source="image\Main.jpeg "  VerticalAlignment="Top" Grid.ColumnSpan="3" Grid.RowSpan="9" Height="322" Stretch="Fill" />
+        <Button x:Name="AjouterPerso" Click="AjouterPerso_Click" Grid.Column="0" Grid.Row="0" Content="Ajouter personnel" Height="25" Width="200"/>
+        <Button x:Name="AjouterSorcier" Click="AjouterSorcier_Click" Grid.Column="0" Grid.Row="2" Content="Sorcier" Height="25" Width="150" Visibility="Collapsed"/>
+        <Button x:Name="AjouterDemon" Click="AjouterDemon_Click" Grid.Column="0" Grid.Row="3" Content="Demon" Height="25" Width="150" Visibility="Collapsed"/>
+        <Button x:Name="AjouterVampire" Click="AjouterVampire_Click" Grid.Column="0" Grid.Row="4" Content="Vampire" Height="25" Width="150" Visibility="Collapsed"/>
+        <Button x:Name="AjouterFantome" Click="AjouterFantome_Click" Grid.Column="0" Grid.Row="5" Content="Fantome" Height="25" Width="150" Visibility="Collapsed"/>
+        <Button x:Name="AjouterZombie" Click="AjouterZombie_Click" Grid.Column="0" Grid.Row="6" Content="Zombie" Height="25" Width="150" Visibility="Collapsed"/>
+        <Button x:Name="AjouterLoupGarou" Click="AjouterLoupGarou_Click" Grid.Column="0" Grid.Row="7" Content="Loup garou" Height="25" Width="150" Visibility="Collapsed"/>
+
+        <Button x:Name="AjouterAttraction" Click="AjouterAttraction_Click" Grid.Column="2" Grid.Row="0" Content="Ajouter attraction" Height="25" Width="200"/>
+        <Button x:Name="AjouterDarkRide" Click="AjouterDarkRide_Click" Grid.Column="2" Grid.Row="2" Content="Dark ride" Height="25" Width="150" Visibility="Collapsed"/>
+        <Button x:Name="AjouterRollerCoaster" Click="AjouterRollerCoaster_Click" Grid.Column="2" Grid.Row="3" Content="Rollercoaster" Height="25" Width="150" Visibility="Collapsed"/>
+        <Button x:Name="AjouterSpectacle" Click="AjouterSpectacle_Click" Grid.Column="2" Grid.Row="4" Content="Spectacle" Height="25" Width="150" Visibility="Collapsed"/>
+        <Button x:Name="AjouterBoutique" Click="AjouterBoutique_Click" Grid.Column="2" Grid.Row="5" Content="Boutique" Height="25" Width="150" Visibility="Collapsed"/>
+
+        <Button x:Name="AfficherPersonnel" Click="AfficherPersonnel_Click" Grid.Column="0" Grid.Row="8" Content="Afficher personnel" Height="25" Width="200"/>
+        <Button x:Name="AfficherAttraction" Click="AfficherAttraction_Click" Grid.Column="2" Grid.Row="8" Content="Afficher attractions" Height="25" Width="200"/>
+
+    </Grid>
+
+</Window>
+   
